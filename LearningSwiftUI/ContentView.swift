@@ -46,7 +46,7 @@ struct ContentView: View {
             }
             .alert(isPresented: $showAlert) {
                 Alert(title: Text("Your Score"), message: Text("\(computeScore())"), dismissButton: .cancel())
-            }
+            }.padding()
             
             VStack {
                 ColourSlider(value: $rGuess, textColour: .red)
