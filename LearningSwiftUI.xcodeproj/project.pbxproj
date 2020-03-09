@@ -13,6 +13,7 @@
 		EAFF792624128E9900B50619 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAFF792524128E9900B50619 /* Assets.xcassets */; };
 		EAFF792924128E9900B50619 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAFF792824128E9900B50619 /* Preview Assets.xcassets */; };
 		EAFF792C24128E9900B50619 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAFF792A24128E9900B50619 /* LaunchScreen.storyboard */; };
+		EAFF79352416A69E00B50619 /* TimerCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF79342416A69D00B50619 /* TimerCounter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		EAFF792824128E9900B50619 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EAFF792B24128E9900B50619 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAFF792D24128E9900B50619 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAFF79342416A69D00B50619 /* TimerCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerCounter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		EAFF791E24128E9700B50619 /* LearningSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				EAFF79332416A68B00B50619 /* Components */,
 				EAFF791F24128E9700B50619 /* AppDelegate.swift */,
 				EAFF792124128E9700B50619 /* SceneDelegate.swift */,
 				EAFF792324128E9700B50619 /* ContentView.swift */,
@@ -73,6 +76,14 @@
 				EAFF792824128E9900B50619 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EAFF79332416A68B00B50619 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				EAFF79342416A69D00B50619 /* TimerCounter.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +159,7 @@
 			files = (
 				EAFF792024128E9700B50619 /* AppDelegate.swift in Sources */,
 				EAFF792224128E9700B50619 /* SceneDelegate.swift in Sources */,
+				EAFF79352416A69E00B50619 /* TimerCounter.swift in Sources */,
 				EAFF792424128E9700B50619 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
