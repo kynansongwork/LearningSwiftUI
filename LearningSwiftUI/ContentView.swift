@@ -18,6 +18,8 @@ struct ContentView: View {
     @State var bGuess: Double
     @State var showAlert = false
     
+    @ObservedObject var timer = TimerCounter()
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -31,7 +33,7 @@ struct ContentView: View {
                     VStack {
                         ZStack(alignment: .center) {
                            Color(red: rGuess, green: gGuess, blue: bGuess, opacity: 1.0)
-                           Text("60")
+                            Text(String(timer.counter))
                             .padding(.all, 5)
                             .background(Color.white)
                             .mask(Circle())
@@ -48,6 +50,7 @@ struct ContentView: View {
                 
                 Button(action: {
                     self.showAlert = true
+                    self.timer.killTimer()
                 }) {
                     Text("Hit me")
                 }
