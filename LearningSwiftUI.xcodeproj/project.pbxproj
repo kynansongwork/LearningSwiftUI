@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA54B43C241BDB5800F83D4D /* ColourUISlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA54B43B241BDB5800F83D4D /* ColourUISlider.swift */; };
 		EA90D34D2418E01700D0024F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA90D34C2418E01600D0024F /* ViewController.swift */; };
 		EA90D34F2418E02400D0024F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA90D34E2418E02400D0024F /* Main.storyboard */; };
 		EAFF792024128E9700B50619 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFF791F24128E9700B50619 /* AppDelegate.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA54B43B241BDB5800F83D4D /* ColourUISlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColourUISlider.swift; sourceTree = "<group>"; };
 		EA90D34C2418E01600D0024F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EA90D34E2418E02400D0024F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		EAFF791C24128E9700B50619 /* LearningSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,6 +45,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA54B437241BD86C00F83D4D /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				EA54B438241BD89700F83D4D /* SwiftUI View */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		EA54B438241BD89700F83D4D /* SwiftUI View */ = {
+			isa = PBXGroup;
+			children = (
+				EA54B43B241BDB5800F83D4D /* ColourUISlider.swift */,
+			);
+			path = "SwiftUI View";
+			sourceTree = "<group>";
+		};
 		EA90D34B2418E00200D0024F /* UiKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +89,7 @@
 		EAFF791E24128E9700B50619 /* LearningSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				EA54B437241BD86C00F83D4D /* User Interface */,
 				EA90D34B2418E00200D0024F /* UiKit */,
 				EAFF79332416A68B00B50619 /* Components */,
 				EAFF791F24128E9700B50619 /* AppDelegate.swift */,
@@ -174,6 +193,7 @@
 			files = (
 				EA90D34D2418E01700D0024F /* ViewController.swift in Sources */,
 				EAFF792024128E9700B50619 /* AppDelegate.swift in Sources */,
+				EA54B43C241BDB5800F83D4D /* ColourUISlider.swift in Sources */,
 				EAFF792224128E9700B50619 /* SceneDelegate.swift in Sources */,
 				EAFF79352416A69E00B50619 /* TimerCounter.swift in Sources */,
 				EAFF792424128E9700B50619 /* ContentView.swift in Sources */,
