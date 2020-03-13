@@ -63,9 +63,12 @@ struct ContentView: View {
                     ColourSlider(value: $gGuess, textColour: .green)
                     ColourSlider(value: $bGuess, textColour: .blue)
                 }
+                
+                
+                NavigationLink(destination: ViewControllerRepresentation()) {
+                    Text("Play BullsEye")
+                }.padding(.bottom)
             }
-            .navigationBarTitle("", displayMode: .inline)
-            .navigationBarHidden(true)
         }
     }
     
