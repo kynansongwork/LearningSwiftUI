@@ -90,15 +90,16 @@ struct ContentView_Previews: PreviewProvider {
 
 struct ColourSlider: View {
     @Binding var value: Double
-    var textColour: Color
+    var textColour: UIColor
     
     var body: some View {
         HStack {
-            Text("0").foregroundColor(textColour)
-            Slider(value: $value)
-                .background(textColour)
-                .cornerRadius(10)
-            Text("255").foregroundColor(textColour)
+            Text("0").foregroundColor(Color(textColour))
+//            Slider(value: $value)
+//                .background(textColour)
+//                .cornerRadius(10)
+            ColourUISlider(colour: textColour, value: $value)
+            Text("255").foregroundColor(Color(textColour))
         }
         .padding(.horizontal)
     }

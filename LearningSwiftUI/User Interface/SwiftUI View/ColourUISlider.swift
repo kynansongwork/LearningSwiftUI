@@ -13,6 +13,7 @@ struct ColourUISlider: UIViewRepresentable {
     @Binding var value: Double
     
     func makeCoordinator() -> ColourUISlider.Coordinator {
+        // required function
         Coordinator(value: $value)
     }
     
@@ -20,8 +21,10 @@ struct ColourUISlider: UIViewRepresentable {
         let slider = UISlider(frame: .zero)
         slider.thumbTintColor = colour
         slider.value = Float(value)
-        slider.minimumTrackTintColor = .green
-        slider.maximumTrackTintColor = .blue
+        slider.minimumTrackTintColor = .darkGray
+        slider.maximumTrackTintColor = .lightGray
+        
+        slider.addTarget(context.coordinator, action: #selector(Coordinator.valueChanged(_:)), for: .valueChanged)
         return slider
     }
     
@@ -38,6 +41,7 @@ struct ColourUISlider: UIViewRepresentable {
         
         @objc func valueChanged(_ sender: UISlider) {
             self.value.wrappedValue = Double(sender.value)
+            // value of the binding
         }
     }
 }
